@@ -1,3 +1,8 @@
+/* Variáveis teste para clonar div
+
+var clonePai = document.getElementById('clonex');
+var clone = document.querySelector('.clone'); */
+
 /* Logs */
 function log(message){
     console.log(message);
@@ -5,7 +10,7 @@ function log(message){
 
 /* Cards de instruções */
 
-const cards = document.querySelectorAll('.card');
+var cards = document.querySelectorAll('.card');
 const dropzones = document.querySelectorAll('.dropzone');
 
 cards.forEach(function(card){
@@ -29,6 +34,9 @@ function dragend(){
     dropzones.forEach(function(dropzone){
         dropzone.classList.remove('highlight');
     });
+
+    this.classList.remove('dragging'); 
+    // remover a opacidade
     this.classList.remove('dragging'); 
 } 
 
@@ -50,14 +58,19 @@ function dragover(){
 
     const cardBeingDragged = document.querySelector('.dragging');
 
-    this.appendChild(cardBeingDragged)
+    this.appendChild(cardBeingDragged);
 }
 
 function dragleave(){
-    this.classList.remove('over')
+    this.classList.remove('over');
 
+    // Testando o clone da div, mas tá bugando
+    /* var cloneCopy = clone.cloneNode(true);
+
+    this.appendChild(cloneCopy); */
+    
 }
 
 function drop(){
-    this.classList.remove('over')
+    this.classList.remove('over');
 }
