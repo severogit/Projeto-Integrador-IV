@@ -1,0 +1,49 @@
+html{
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    background-color: #d9d9d9;
+    color: blue;
+}
+
+.boards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.board{
+    background: white;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.board:nth-child(2){
+    margin-left: 10%;
+}
+
+.board h3{
+    padding: 12px;
+    margin: 0;
+    color: orange;
+}
+
+#box{
+    padding: 16px;
+    min-width: 200px;
+    height: 500px;
+}
+
+.dropzone{
+    padding: 16px;
+    min-width: 350px;
+    height: 600px;
+}
+
+.card{
+    font-weight: 300;
+    padding: 16px;
+    box-shadow: 0 2px 2px -1px navy;
+    width: 100px;
+    margin-top: 15px 0;
+}
