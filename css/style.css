@@ -7,6 +7,13 @@ body{
     color: blue;
 }
 
+.header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 45px;
+}
+
 .boards{
     display: flex;
     flex-wrap: wrap;
@@ -24,6 +31,7 @@ body{
 }
 
 .board h3{
+    font-size: 25px;
     padding: 12px;
     margin: 0;
     color: orange;
@@ -45,7 +53,7 @@ body{
     box-shadow: 0px 2px 2px -1px yellow;
     border-radius: 4px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 .status{
@@ -55,11 +63,7 @@ body{
     border-radius: 8px;
 }
 
-.status.red{
-    background: red;
-}
-
-.status.green{
+.green{
     background: lightgreen;
 }
 
